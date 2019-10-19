@@ -6,7 +6,7 @@ h1 {
   height:100vh;
   background-image: url(background.jpg);
 background-size: cover;
-background-position: center bottom;
+background-position: bottom left;
 background-repeat: no-repeat;
 
 display: flex;
@@ -15,16 +15,17 @@ align-items: center;
 }
 
 .resume{
-  height:100vh;
-  background-image: url(background.jpg);
+  /* height:100vh; */
+  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)) bottom/cover no-repeat,url(construction.jpg) bottom/cover no-repeat;
+  /* background-image: url(construction.jpg);
 background-size: cover;
-background-position: center bottom;
-background-repeat: no-repeat;
+background-position: center;
+background-repeat: no-repeat; */
 
-display: flex;
+/* display: flex;
 justify-content: center;
-align-items: center;
-flex-direction: column;
+/* align-items: center; */
+/* flex-direction: column; */
 
 color: white;
 padding: 100px;
@@ -39,6 +40,7 @@ h2{
 }
 .bio{
   padding: 100px;
+  background-color: lightgray;
 }
 
 .video-container iframe {
@@ -68,5 +70,36 @@ h2{
   .video-wrapper {
     width: 100%;
   }
+  .bio,.resume{
+    padding: 20px;
+  }
 }
 *{font-family: 'PT Serif', serif;}
+
+.resume h2, .resume h3{
+  text-align: center;
+}
+
+.float-right{
+  float: right;
+}
+
+.side-grouping p{
+  display: inline;
+  margin: 0;
+}
+
+
+a{
+  color: green;
+  text-decoration: none;
+
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.red{
+  color: red;
+}
